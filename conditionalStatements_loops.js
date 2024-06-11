@@ -151,6 +151,57 @@ console.log("Sum of numbers: " + sum)
 
 i = 1
 while(i *5 < 50){
-    console.log(i * 5)
+    console.log("Multiples of 5: " + i * 5)
     i++
 }
+
+
+/*Exercise 5*/
+
+i = 1
+
+do{
+    console.log(i)
+    i++
+} while (i <= 10)
+
+/* ---------------------------------------*/
+
+sum = 0
+i = 1
+
+do{
+    sum += i
+    i++
+} while( i <= 100)
+
+    console.log("The sum: " +sum)
+
+/* ---------------------------------------*/
+
+let userInput
+
+do {
+    userInput = prompt("Enter a number greater than 10")
+  
+} while(userInput <= 10)
+
+    console.log("You entered: " + userInput)
+
+/* ---------------------------------------*/
+
+const numb = 25
+let userGuess1
+
+
+do{
+    userGuess1 = prompt("Guess a number:")
+    userGuess1 = Number(userGuess1)
+    if(userGuess1 !== numb){
+        console.log("Wrong guess again")
+    }
+    
+} while(userGuess1 !== numb)
+    console.log("Correct", numb)
+
+
